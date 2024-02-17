@@ -17,7 +17,7 @@ function addfun()
     newele.innerHTML=`${inputvalue}  `; // <i id="deleteicon" class="fa fa-trash-o"></i> if we want to add delete icon
     addinput.appendChild(newele)
     inputele.value="";
-    addbtn.scrollTop = addbtn.scrollHeight;
+   
     // newele.querySelector("i").addEventListener("click",remove)
     // function remove() // created addEven..and function to remove input values what we entered
     // {
@@ -36,6 +36,7 @@ function changeinto1()
 function changeinto2()
 {
     document.getElementById("msg").innerText="Ashok"
+    
 }
 
 function changeinto3()

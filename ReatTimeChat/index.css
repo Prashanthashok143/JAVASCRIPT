@@ -1,8 +1,14 @@
-
 .blink {
     animation: blinker 1.5s linear infinite;
     color:white;
+    box-sizing: border-box; /* This includes padding and border in the width */
+
     font-family: sans-serif;
+}
+@media screen and (max-width:425px) {
+  header{
+    width: 100%;
+  }  
 }
 
 @keyframes blinker {
@@ -18,18 +24,19 @@ header {
    
     background-color: #007bff;
     color: #fff;
+
     
-    /* padding: 20px; */
+    
   }
 #conatiner2{
 
 background-color:lightgreen;
 height: 320px;
-width: 380px;
+width: 350px;
 position: relative;
-left: 470px;
+left: 400px;
 
-bottom: 508px;
+bottom: 545px;
 padding: 20px 0 0 10px;
 /* border: ridge 2px; */
 box-shadow: 2px 2px 1px black;
@@ -37,6 +44,12 @@ overflow-y: auto;
 overflow-x: none;
 
 }
+#chatpage{
+    position: relative;
+    bottom: 870px;
+    left: 420px;
+    list-style: none;
+  }
 #msg{
     display: inline-block;
     color: black;
@@ -59,8 +72,8 @@ overflow-x: none;
 #Calls{
     display: flex;
     position: relative;
-    left: 720px;
-    bottom: 835px;
+    left: 650px;
+    bottom: 1015px;
 
 
 }
@@ -100,7 +113,7 @@ ul{
 }
 #inputvaluesadd{
     position: relative;
-    bottom: 100px;
+    top: 70px;
 }
 .listitems{
     margin-left: 30px;
@@ -146,7 +159,7 @@ input{
   
     box-shadow: 2px 2px 1px black;
     border-radius: 5px;
-    width: 31.98%;
+    width: 310px;
     
     height: 30px;
     /* bottom: 360px; */
@@ -169,8 +182,8 @@ input:focus{
 }
 #inputbtn{
     position: relative;
-    left: 470px;
-     bottom: 580px;
+    left: 400px;
+     bottom: 758px;
 }
 #profieid{
     display: inline-block;
@@ -184,8 +197,174 @@ input:focus{
 }
 #idscreate{
      position: relative;
-    left: 100px;
+     right: 20px;
+     bottom: 25px;
+     pointer-events: auto;
+   
+
 }
+@media screen and (max-width:768px){
+    #idscreate{
+        position: relative;
+        right: 45px;
+        bottom: 28px;
+       
+    width: 320px;
+    
+   }
+   #cameraPreview{
+    position: relative;
+    bottom: 430px;
+    left: 38px;
+    height: 373px;
+    width: 290px;
+     
+}
+  #chatpage{
+    position: relative;
+    bottom: 470px;
+    left: 50px;
+    list-style: none;
+  }
+  
+   #conatiner2{
+
+    background-color:lightgreen;
+    
+    width: 280px;
+    position: relative;
+    left: 38px;
+   
+    bottom:150px;
+    padding: 20px 0 0 10px;
+    /* border: ridge 2px; */
+    box-shadow: 2px 2px 1px black;
+    overflow-y: auto;
+    overflow-x: none;
+    
+    }
+    #inputvaluesadd{
+        position: relative;
+       top: 70px;
+    }
+   
+    #Settings{
+        display: inline-block;
+        /* background-color: white; */
+        height: 100;
+        width: 50px;
+        position: relative;
+        left: 215px;
+        bottom: 290px;
+        list-style: none;
+    }
+    #chatsandupdates{
+        display: flex;
+        float: row;
+        list-style: none;
+        position: relative;
+        left: 110px;
+        bottom: 500px;
+        width: 50px;
+        
+    }
+    #inputbtn{
+        position: relative;
+        left: 37.5px;
+         bottom: 443px;
+    }
+    input{
+  
+        box-shadow: 2px 2px 1px black;
+        border-radius: 5px;
+        width: 240px;
+        
+        height: 30px;
+        /* bottom: 360px; */
+    } 
+    
+    .listitems{
+        margin-left: 30px;
+        margin-bottom: 10px;
+        padding-left: 7px;
+        /* font-family:; */
+        font-size: small;
+        background-color: white;
+        width:200px;
+        /* border: outset; */
+        border-radius: 5px;
+        display: flex;
+      justify-content: space-between;
+      align-content: center;
+      /* border: inse; */
+      /* border-radius: 8px; */
+    
+      padding-bottom: 2px;
+      padding-top: 2px;
+      box-shadow: 2px 2px 1px black;
+      
+      
+      /* position: relative;
+      right: 100px; */
+    
+    }
+    
+    #Calls{
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        left: 280px;
+        bottom: 650px;
+    }
+    
+#telephone:hover{
+    animation: zoom 2s infinite;
+    
+    }
+    @keyframes zoom {
+        0%{
+            transform: scale(0,2);
+        }
+       
+    }
+ #cameravideo:hover{
+    animation: zoomv 2s infinite;
+    
+}
+@keyframes zoomv {
+    0%{
+        transform: scale(1,1);
+    }
+ }
+
+ #morelinks{
+    display: none;
+}
+#morelinks.displaythemore{
+    display: block;
+    color:black ;
+    position: relative;
+    right: 517px;
+    top: 100px;
+}
+.morelinks{
+    margin-bottom: 5px;
+    background-color:white;
+    padding: 5px;
+    border:solid;
+    border-radius: 3px;
+    cursor:grab;
+    width: 150px;
+    /* position: relative;
+    bottom: 900px;
+    left: 100px;
+    list-style: none; */
+}
+
+ 
+    
+}
+
 .list{
 
     margin-left: 90px;
@@ -221,6 +400,7 @@ input:focus{
     position: relative;
     left: 90px;
     top: 15px;
+
     border: inset;
     border-radius: 8px;
     color: white;
@@ -252,14 +432,14 @@ animation: change 2s infinite;
     }
    
 } */
-#cameraPreview{
+/* #cameraPreview{
     position: relative;
     bottom: 950px;
     left: 920px;
     height: 373px;
     width: 394px;
      
-}
+} */
 
 
 #idscreate{
@@ -282,9 +462,9 @@ color: black;
     display: inline-block;
     /* background-color: white; */
     height: 100;
-    width: 150;
+    width: 100;
     position: relative;
-    left: 215px;
+    left: 267px;
     bottom: 290px;
     list-style: none;
 }
@@ -305,7 +485,7 @@ color: black;
     list-style: none;
     position: relative;
     left: 110px;
-    bottom: 420px;
+    bottom: 430px;
     width: 50px;
     
 }
@@ -336,8 +516,8 @@ color: black;
     cursor:grab;
     width: 100px;
     position: relative;
-    bottom: 900px;
-    left: 730px;
+    bottom: 1088px;
+    left: 630px;
     list-style: none;
 }
 .morelinks:hover{
@@ -350,12 +530,19 @@ color: black;
     position: relative;
 
 }
-
-video {
+#cameraPreview{
+    position: relative;
+    bottom: 1205px;
+    left: 775px;
+    height: 373px;
+    width: 290px;
+     
+}
+/* video {
     width: 500px;
     height: 400px;
     object-fit: cover;
-}
+} */
 /* #chatpage{
     display: flex;
     color: white;
